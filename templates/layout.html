@@ -2,24 +2,22 @@
 <html>
 <head>
 	<title>{% block title %}{% endblock %}</title>
-	{% block styles %}
-    	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    {% endblock %}
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="shortcut icon" href="{{ url_for('static', filename='img/iconoTienda.ico') }}" type="image/x-icon">
 
 </head>
 <body>
 	<header>
-		<!-- header -->
 		<!-- Navigation Bar -->
 		<nav>
 			<div class="w3-bar w3-black">
+				<a href="./" class="w3-bar-item">
+					<img src="{{ url_for('static', filename='img/logo.jpg') }}" style="width:3rem">
+				</a>
 				<a href="./" class="w3-bar-item w3-button">Home</a>
 				<a href="./shopping" class="w3-bar-item w3-button">Shopping</a>
 				<a href="./contact" class="w3-bar-item w3-button">Contact</a>
 				{% block shopping %}
-
 				{% endblock %}
 			</div>
 		</nav>
@@ -35,7 +33,7 @@
 				<p>&copy; 2023 My Website. All Rights Reserved.</p>
 			</div>
 			<div class="w3-col m6">
-				<p>Contact Us: info@mywebsite.com</p>
+				<p>Contact Us: info@HuabinYury.com</p>
 			</div>
 		</div>
 	</footer>

@@ -1,0 +1,19 @@
+
+
+{% block games %}
+        <div class="w3-row">
+        {% for game in listGames %}
+        <div class="w3-col l3 m3 s12">
+            <div class="w3-card-4">
+                <img src="{{ game['image_url'] }}" alt="{{ game['name'] }}" style="width:100%;height:14rem">
+                <div class="w3-container w3-center">
+                    <h3>{{ game['name'] }}</h3>
+                    <p class="w3-opacity">Price: ${{ game['price'] }}</p>
+                    <a href="#" class="w3-button w3-blue">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
