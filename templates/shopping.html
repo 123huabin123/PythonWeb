@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
 
 {% block title %}Shopping{% endblock %}
-
+    {% block shopping %}
+<div class="w3-right">
+    <img src="{{ url_for('static', filename='img/carritoShopping.png') }}" style="width:2rem;height:2rem;margin-right:2rem">
+</div>
+    {% endblock %}
 {% block content %}
     <!-- Game Products -->
     <div class="w3-container w3-padding-32">
@@ -28,9 +32,19 @@
             </div>
             <div class="w3-col l3 m3 s12">
                 <div class="w3-card-4">
-                    <img src="{{ url_for('static', filename='img/zelda.jpg') }}" alt="Silksong" style="width:100%;height:14rem">
+                    <img src="{{ url_for('static', filename='img/silksong.jpeg') }}" alt="Silksong" style="width:100%;height:14rem">
                     <div class="w3-container w3-center">
                         <h3>Hollow Knight: Silksong</h3>
+                        <p class="w3-opacity">Price: $24.99</p>
+                        <a href="#" class="w3-button w3-blue">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+             <div class="w3-col l3 m3 s12">
+                <div class="w3-card-4">
+                    <img src="{{ url_for('static', filename='img/zelda.jpg') }}" alt="Zelda" style="width:100%;height:14rem">
+                    <div class="w3-container w3-center">
+                        <h3 class="w3-truncate">The Legend of Zelda: Tears of The Kingdom</h3>
                         <p class="w3-opacity">Price: $24.99</p>
                         <a href="#" class="w3-button w3-blue">Add to Cart</a>
                     </div>

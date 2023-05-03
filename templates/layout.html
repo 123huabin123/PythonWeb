@@ -5,6 +5,9 @@
 	{% block styles %}
     	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     {% endblock %}
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/iconoTienda.ico') }}" type="image/x-icon">
+
 </head>
 <body>
 	<header>
@@ -15,6 +18,9 @@
 				<a href="./" class="w3-bar-item w3-button">Home</a>
 				<a href="./shopping" class="w3-bar-item w3-button">Shopping</a>
 				<a href="./contact" class="w3-bar-item w3-button">Contact</a>
+				{% block shopping %}
+
+				{% endblock %}
 			</div>
 		</nav>
 	</header>
