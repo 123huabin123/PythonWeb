@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Shopping{% endblock %}
+
+{% block content %}
+    <!-- Game Products -->
+    <div class="w3-container w3-padding-32">
+        <div class="w3-row">
+            <div class="w3-col l3 m3 s12">
+                <div class="w3-card-4">
+                    <img src="{{ url_for('static', filename='img/darkSouls3.jpg') }}" alt="Dark souls 3" style="width:100%">
+                    <div class="w3-container w3-center">
+                        <h3>Dark souls 3</h3>
+                        <p class="w3-opacity">Price: $19.99</p>
+                        <a href="#" class="w3-button w3-blue">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m3 s12">
+                <div class="w3-card-4">
+                    <img src="{{ url_for('static', filename='img/doomEternal.jpg') }}" alt="Doom eternal" style="width:100%">
+                    <div class="w3-container w3-center">
+                        <h3>Doom eternal</h3>
+                        <p class="w3-opacity">Price: $24.99</p>
+                        <a href="#" class="w3-button w3-blue">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
